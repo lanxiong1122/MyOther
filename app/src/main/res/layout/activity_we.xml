@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WeActivity">
+
+
+        <TextView
+            android:id="@+id/textViewAboutUs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:padding="16dp"
+            android:text="                              About \nIn a world where technology connects us like never before, we strive to create meaningful experiences that enrich your life. Our commitment to you is simple: to build tools and services that make the world a better place. This mission drives everything we do, from the smallest feature to the largest platform. We believe in the power of innovation, the importance of community, and the necessity of privacy.
+
+Our journey began with a vision to empower individuals and businesses alike, to harness the full potential of digital transformation. Over the years, we have grown into a diverse team of passionate professionals who share a common goal: to bring people closer together through technology. We are committed to fostering an environment where everyone can thrive, innovate, and make a positive impact on society.
+
+At our core, we value transparency, integrity, and excellence. These values guide our every decision and action. We are dedicated to maintaining the highest standards of quality and security, ensuring that our users’ data is protected at all times. Our products are designed with user experience in mind, focusing on simplicity, reliability, and accessibility.
+
+We understand that trust is earned, not given. That’s why we continuously work towards building a trustworthy relationship with our users. Through regular updates, robust customer support, and open communication, we aim to address any concerns and provide the best possible service.
+
+As we look to the future, we remain committed to pushing the boundaries of what is possible. Whether it’s through cutting-edge technology or innovative partnerships, we will continue to explore new ways to enhance the lives of our users. Join us on this exciting journey, and together, let’s shape a brighter tomorrow.
+
+---
+
+In a world where technology is rapidly evolving, we see it as our duty to stay ahead of the curve. This means not only adopting new technologies but also anticipating their impact on society and shaping them in ways that benefit humanity. We believe that technology should serve to enhance human capabilities rather than replace them. Our team is always exploring the latest trends in artificial intelligence, machine learning, and other emerging fields, with the goal of integrating these innovations into our platforms in a way that adds real value to our users' lives.
+
+We take pride in our ability to adapt and evolve. The digital landscape is ever-changing, and we are committed to being at the forefront of these changes. Our teams are constantly learning and growing, which allows us to stay agile and responsive to the needs of our users. We are driven by a passion for innovation and a deep understanding of the challenges and opportunities that lie ahead.
+
+One of the key aspects of our approach is collaboration. We believe that the most significant breakthroughs come from working together. Our partnerships with industry leaders, universities, and startups around the globe help us stay informed about the latest developments and trends. By pooling our resources and expertise, we can achieve more than we could alone. This collaborative spirit is reflected in our products, which are designed to foster communities and encourage collaboration among our users.
+
+We are also committed to sustainability. As a company, we recognize the importance of minimizing our environmental footprint. From using renewable energy sources in our data centers to designing products that are energy-efficient, we strive to be a force for good in the world. We believe that sustainable practices are not just good for the planet; they are essential for long-term business success.
+
+---
+
+Our dedication to user experience extends beyond the products we create. We also prioritize the well-being of our employees, recognizing that happy and healthy teams lead to better outcomes for our users. Our workplace culture emphasizes work-life balance, continuous learning, and personal growth. We offer flexible work arrangements, comprehensive health benefits, and opportunities for professional development.
+
+We believe that diversity and inclusion are critical components of innovation. Our team is made up of individuals from various backgrounds and cultures, each bringing unique perspectives and ideas to the table. This diversity fuels creativity and drives us to think outside the box. We are committed to creating an inclusive environment where everyone feels valued and respected, and where different voices are heard and celebrated.
+
+To further our commitment to making a positive impact, we actively engage in corporate social responsibility initiatives. We support a variety of causes, from healthcare and education to environmental conservation and disaster relief. Our employees are encouraged to volunteer and contribute to the communities in which we operate. We believe that giving back is not just a moral obligation but a way to enrich our own lives and the lives of those around us.
+
+We are deeply grateful to our users for choosing our products and services. Your trust and support inspire us to keep pushing the boundaries of what is possible. As we continue to grow and evolve, we promise to stay true to our core values of innovation, integrity, and community. Together, we can achieve great things and make a lasting difference in the world.
+
+---"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:scrollbars="vertical"
+            tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/buttonPrivacyPolicy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Privacy Service\n https://www.baidu.com"
+        android:padding="10dp"
+        android:autoLink="all"
+        android:textColor="#ffffff"
+        android:background="#80000000"
+        app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

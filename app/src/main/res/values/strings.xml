@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Accounting The Day</string>
+    <string name="add_new_record">Remember one stroke</string>
+    <string name="add_new_record_short">Remember one stroke</string>
+    <string name="shortcut_disable_msg">Not currently available</string>
+</resources>
