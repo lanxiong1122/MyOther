@@ -55,7 +55,7 @@ We are deeply grateful to our users for choosing our products and services. Your
         android:id="@+id/buttonPrivacyPolicy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Privacy Service\n https://www.baidu.com"
+        android:text="Privacy Service"
         android:padding="10dp"
         android:autoLink="all"
         android:textColor="#ffffff"
