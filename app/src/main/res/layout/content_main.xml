@@ -1,15 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior">
-
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/view_pager"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main">
+    <LinearLayout
+        android:id="@+id/linLay"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:background="#074854"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:gravity="center_horizontal"
+            android:text="More"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:textSize="28sp"
+            android:background="@drawable/laile"
+            android:onClick="onToggleNavigationClick"
+            />
 
-    </androidx.viewpager.widget.ViewPager>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#CBF6EA"
+            android:gravity="center_horizontal"
+            android:text="Score: "
+            android:layout_weight="1"
+            android:textSize="28sp"/>
 
-</RelativeLayout>
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:textColor="#CBF6EA"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:textSize="28sp"/>
+
+        <ImageButton
+            android:id="@+id/bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#CBF6EA"
+            android:layout_gravity="center"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/again"/>
+    </LinearLayout>
+
+    <GridLayout
+        android:id="@+id/board"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/peichen">
+
+    </GridLayout>
+</LinearLayout>

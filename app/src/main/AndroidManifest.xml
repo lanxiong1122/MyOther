@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.hanyuzhou.accountingapp">
-
-    <uses-permission android:name="android.permission.INTERNET" />
-
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.xample.candycrush"><!--
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>-->
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -12,24 +12,46 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".WeActivity"
-            android:exported="true" />
+            android:name=".activity.VolumeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".activity.HelpActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".activity.AboutActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".activity.SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-            <!--
-                <meta-data android:name="android.app.shortcuts"
-                android:resource="@xml/shortcuts"/>
-            -->
         </activity>
         <activity
-            android:name=".AddRecordActivity"
-            android:windowSoftInputMode="adjustPan"></activity>
+            android:name=".activity.RegisterActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
