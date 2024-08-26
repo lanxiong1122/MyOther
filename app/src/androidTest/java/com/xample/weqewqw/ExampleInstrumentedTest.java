@@ -1,4 +1,4 @@
-package com.xample.candycrush;
+package com.xample.weqewqw;
 
 import android.content.Context;
 
